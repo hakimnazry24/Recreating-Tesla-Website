@@ -95,6 +95,7 @@ section .buttons{
 
 aside{
     position: fixed;
+    transition: right .4s ease;
     right: -320px;   
     width: 320px;
     background-color: #fff;
@@ -102,6 +103,9 @@ aside{
     z-index: 4;
     height: 100vh;
     font-weight: 500;
+}
+aside.active{
+    right: 0;
 }
 aside a{
     display: block;
@@ -120,6 +124,8 @@ aside button.close{
     padding: 10px;
     font-family: sans-serif;
     font-weight: 100;
+    cursor: pointer;
+
 
 }
 .backdrop{
@@ -129,3 +135,8 @@ aside button.close{
     background-color: rgba(0,0,0,.35);
     backdrop-filter: blue(5px);
 }
+.backdrop.active{
+    display: block;
+}
+
+
